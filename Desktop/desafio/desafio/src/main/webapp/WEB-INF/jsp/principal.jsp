@@ -3,103 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>Portal do Professor - Escola Conquer</title>
-<style type="text/css">
-/*Formatação Geral*/
-body {
-	background-color: #000000;
-	text-align: center;
-}
-
-/**/
-
-/*Formatação do cabeçalho e rodapé*/
-header#cabecalho img {
-	height: 150px;
-	width: 400px;
-	float: 200px;
-}
-
-footer#rodape img {
-	height: 50px;
-	width: 50px;
-	float: 200px;
-}
-
-footer#rodape a {
-	height: 50px;
-	width: 50px;
-	float: 50px;
-}
-
-/**/
-
-/* Formatação Menu Principal */
-#menu ul {
-	background-color: #000000;
-	list-style: none;
-	padding: 15px;
-	position: static;
-}
-
-#menu ul li {
-	display: inline;
-	padding: 10px;
-	position: static;
-}
-
-#menu ul li a {
-	padding: 5px;
-	display: inline-block;
-	color: #ffffff;
-	background-color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	text-align: center;
-	text-decoration: none;
-	text-align: center;
-	font-size: 20px;
-	position: static;
-	height: 50px;
-	width: 200px;
-	padding: 10px;
-	border: 3px #ffff00 solid;
-	background-color: #000000;
-	box-sizing: border-box;
-	border-image-slice: 30%;
-}
-
-#menu ul li a:hover{
-	background-color: #ffff00;
-	color: #000000;
-}
-
-/**/
-
-/* Formatação das Tabelas*/
-#tabelaAlunos {
-	color: #ffffff;
-	background-color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	text-align: center;
-	display: inline;
-}
-
-#tabelaTurmas {
-	color: #ffffff;
-	background-color: #000000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	text-align: center;
-	display: inline;
-}
-
-#tabelas {
-	display: inline;
-}
-
-/**/
-</style>
+<link
+	href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="style/principal.css">
 </head>
 <body>
 	<div id="interface">
@@ -109,76 +19,65 @@ footer#rodape a {
 				<img
 					src="https://static-cdn.myedools.com/org-14781%2Fschool-15779%2F5a214ce880dc86a53524f15db026d4b8%2FConquer+Online+White.png">
 			</header>
-			<div class="col-12">
+			<div class="col-10">
 				<hr>
 			</div>
-			<div>
-				<nav id="menu">
-					<ul>
-						<li><a href="/principalLogged"> Página Principal </a></li>
-						<li><a href="/turma"> Adicionar Turma </a></li>
-						<li><a href="/aluno"> Adicionar Aluno </a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-
-		<div class="col-12">
-			<hr>
-		</div>
-
-		<div id="tabelas">
-			<table id="tabelaAlunos">
-				<caption>Tabela de Alunos</caption>
-				<tr>	
-					<td >Aluno</td>
-					<td >Turma</td>
-				</tr>
-				<tr>
-					<td >Ana</td>
-					<td >151</td>
-				</tr>
-			</table>
-			<table id="tabelaTurmas">
-				<caption>Tabela de Turmas</caption>
-				<tr>	
-					<td >Turma</td>
-					<td >Número de alunos</td>
-				</tr>
-				<tr>
-					<td >151</td>
-					<td >1</td>
-				</tr>
-			</table>
-		</div>
-
-		<footer class="footer-for-businesses">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-10 mx-auto mb-0 mb-lg-5">
-						<div class="row pb-5">
-							<div class="col-12">
-								<hr>
-							</div>
-							<div class="col-12 col-sm-6 text-center text-sm-left">
-								<a><img
-									src="https://escolaconquer.com.br/wp-content/uploads/2019/10/Marca_CONQUER.png"
-									class="logo-conquer"></a>
-							</div>
-							<div class="col-12 col-sm-6 text-center text-sm-right pt-4">
-								<a href="https://www.linkedin.com/school/escolaconquer/"
-									class="mx-3"><img
-									src="https://escolaconquer.com.br/wp-content/uploads/2019/10/linkedin.png"></a>
-								<a href="https://www.facebook.com/escolaconquer/" class="mx-3"><img
-									src="https://escolaconquer.com.br/wp-content/uploads/2019/10/facebook.png"></a>
-								<a href="https://www.instagram.com/escolaconquer/" class="mx-3"><img
-									src="https://escolaconquer.com.br/wp-content/uploads/2019/10/instagram.png"></a>
-							</div>
+				<div class="navbar">
+					<div class="navbar-inner" id="menu">
+						<a class="btn btn-navbar" data-toggle="collapse"
+							data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span>
+						</a>
+						<div class="nav-collapse collapse">
+							<ul class="nav">
+								<li class="active"><a href="/principalLogged">Página
+										Principal</a></li>
+								<li><a href="/turma">Adicionar Turma</a></li>
+								<li><a href="/aluno">Adicionar Aluno </a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+		<div id="tabelas">
+			<table id="tabelaAlunos">
+				<caption>Tabela de Alunos</caption>
+				<tr>
+					<td>Aluno</td>
+					<td>Número da Turma</td>
+				</tr>
+				<tr>
+					<td>Ana</td>
+					<td>151</td>
+				</tr>
+			</table>
+			<table id="tabelaTurmas">
+				<caption>Tabela de Turmas</caption>
+				<tr>
+					<td>Turma</td>
+					<td>Número de alunos</td>
+				</tr>
+				<tr>
+					<td>151</td>
+					<td>1</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-10">
+
+			<footer class="footer-for-businesses" id="container_amarelo">
+				<a href="https://www.linkedin.com/school/escolaconquer/"
+					class="mx-3"><img
+					src="https://escolaconquer.com.br/wp-content/uploads/2019/10/linkedin.png"></a>
+				<a href="https://www.facebook.com/escolaconquer/" class="mx-3"><img
+					src="https://escolaconquer.com.br/wp-content/uploads/2019/10/facebook.png"></a>
+				<a href="https://www.instagram.com/escolaconquer/" class="mx-3"><img
+					src="https://escolaconquer.com.br/wp-content/uploads/2019/10/instagram.png"></a>
+			</footer>
+
+		</div>
 	</div>
 </body>
 </html>

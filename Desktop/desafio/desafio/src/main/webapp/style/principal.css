@@ -1,0 +1,108 @@
+/*Formatação Geral*/
+body {
+	background-color: #000000;
+	text-align: center;
+}
+
+/**/
+
+/*Formatação do cabeçalho e rodapé*/
+#container_amarelo {
+	background: #ffff50;
+	height: 100px;
+	width: 1150px;
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+	align-items: center;
+	display: inline-block;
+}
+
+#container_amarelo a {
+	text-align: center;
+	align-items: center;
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+	
+}
+
+header#cabecalho img {
+	padding: 10px;
+	height: 150px;
+	width: 400px;
+	float: 200px;
+	margin: 10px;
+}
+
+/**/
+
+/* Formatação Menu Principal */
+.navbar-inner {
+	min-height: 20px;
+	background-color: #ffff50;
+	color: #000000;
+}
+
+.navbar .brand {
+	padding: 10px;
+	background-color: #ffff50;
+	color: #000000;
+}
+
+.navbar .nav>li>a {
+	padding: 20px;
+	background-color: #ffff50;
+	color: #000000;
+}
+
+.navbar .btn-navbar {
+	margin-top: 15px;
+	background-color: #ffff50;
+	color: #000000;
+}
+
+/**/
+
+/* Formatação das Tabelas*/
+#tabelaAlunos {
+	color: #ffffff;
+	background-color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	border-collapse: collapse;
+	display: inline;
+	margin: 50px;
+}
+
+#tabelaTurmas {
+	color: #ffffff;
+	background-color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	border-collapse: collapse;
+	display: inline;
+	margin: 50px;
+}
+
+#tabelas table tr {
+	border: 1px solid #ffffff;
+	padding: 8px;
+}
+
+#tabelas table td {
+	border: 1px solid #ffffff;
+	padding: 8px;
+}
+
+#tabelas table caption {
+	border: 1px solid #ffffff;
+	padding: 8px;
+}
+
+#tabelas {
+	padding: 20px;
+}
+/**/

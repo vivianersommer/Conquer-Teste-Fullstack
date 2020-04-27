@@ -15,8 +15,6 @@ import com.conquer.desafio.service.LoginService;
 @SessionAttributes("name")
 public class LoginController {
 	
-	boolean userLog = false;
-
 	@Autowired
     LoginService service;
 	
@@ -28,11 +26,10 @@ public class LoginController {
     @RequestMapping(value="/principal", method = RequestMethod.POST)
     public String showMainPage(ModelMap model, @RequestParam String userName, @RequestParam String password){
         boolean isValidUser = service.validateUser(userName, password);
-        if (!isValidUser && userLog) {
+        if (!isValidUser) {
             model.put("errorMessage", "Invalid Credentials");
             return "index";
         }
-        userLog = true;
         model.put("userName", userName);
         model.put("password", password);
         return "principal";

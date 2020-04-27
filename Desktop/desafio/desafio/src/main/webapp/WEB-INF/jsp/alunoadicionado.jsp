@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <title>Portal do Professor - Escola Conquer</title>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <link
 	href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
 	rel="stylesheet" id="bootstrap-css">
 <script
 	src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="style/turma.css">
+<link rel="stylesheet" href="style/alunoadicionado.css">
 </head>
 <body>
 	<div id="interface">
@@ -41,17 +42,9 @@
 				</div>
 			</div>
 		</div>
-		
-		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Adicionar Turma - Escola Conquer</p>
-		
-		<form id="model" method="POST" action="/turmaPost">
-					<input type="text" id="name" class="fadeIn first" name="name" placeholder="Nome da Turma" required> 
-					<input type="text" id="teacher" class="fadeIn second" name="teacher" placeholder="Nome do Professor" required>
-					<input type="number" id="numberTurm" class="fadeIn third" name="numberTurm" placeholder="Número da Turma" required>
-					<input type="submit" class="fadeIn fourth" value="Adicionar Turma">
-		</form>
 
-		
+		<h1>Você adicionou um aluno! Volte a página principal para ver todos os alunos :)</h1>
+
 		<div class="col-10">
 
 			<footer class="footer-for-businesses" id="container_amarelo">
