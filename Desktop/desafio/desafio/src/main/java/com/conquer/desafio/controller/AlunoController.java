@@ -20,7 +20,7 @@ public class AlunoController {
     AlunoService user;
     
     @RequestMapping(value="/alunoPost", method = RequestMethod.POST)
-    public String showMainPage(ModelMap model ,@RequestParam String firstName, @RequestParam String lastName, @RequestParam int numberTurm){
+    public String showMainPage(ModelMap model, @RequestParam String firstName, @RequestParam String lastName, @RequestParam int numberTurm){
         User isValidUser = user.insertUser(firstName, lastName, numberTurm);
         if (isValidUser == null) {
             return "aluno";

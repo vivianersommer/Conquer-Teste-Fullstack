@@ -32,10 +32,9 @@
 						</a>
 						<div class="nav-collapse collapse">
 							<ul class="nav">
-								<li class="active"><a href="/principalLogged">Página
-										Principal</a></li>
-								<li><a href="/turma">Adicionar Turma</a></li>
-								<li><a href="/aluno">Adicionar Aluno </a></li>
+								<li class="active"><a href="/principalLogged">PÁGINA PRINCIPAL</a></li>
+								<li><a href="/turma">ADICIONAR TURMA</a></li>
+								<li><a href="/aluno">ADICIONAR ALUNO</a></li>
 							</ul>
 						</div>
 					</div>
@@ -43,7 +42,7 @@
 			</div>
 		</div>
 
-		<h1>Você adicionou um aluno! Volte a página principal para ver todos os alunos :)</h1>
+		<h1>VOCÊ ADICIONOU UM ALUNO! VOLTE A PÁGINA PRINCIPAL PARA VER TODOS OS ALUNOS :)</h1>
 
 		<div class="col-10">
 

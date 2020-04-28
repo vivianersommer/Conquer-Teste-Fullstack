@@ -32,10 +32,9 @@
 						</a>
 						<div class="nav-collapse collapse">
 							<ul class="nav">
-								<li class="active"><a href="/principalLogged">Página
-										Principal</a></li>
-								<li><a href="/turma">Adicionar Turma</a></li>
-								<li><a href="/aluno">Adicionar Aluno </a></li>
+								<li class="active"><a href="/principalLogged">PÁGINA PRINCIPAL</a></li>
+								<li><a href="/turma">ADICIONAR TURMA</a></li>
+								<li><a href="/aluno">ADICIONAR ALUNO</a></li>
 							</ul>
 						</div>
 					</div>
@@ -43,7 +42,7 @@
 			</div>
 		</div>
 
-		<h1> Ocorreu algum erro, tente voltar para a página principal! :( </h1>
+		<h1> OCORREU ALGUM ERRO, TENTE VOLTAR PARA A PÁGINA PRINCIPAL! :( </h1>
 
 		<div class="col-10">
 

@@ -24,8 +24,8 @@ public class TurmController {
         if (isValidTurm == null) {
             return "turma";
         }
-        model.put("firstName", name);
-        model.put("lastName", teacher);
+        model.put("name", name);
+        model.put("teacher", teacher);
         model.put("numberTurm", numberTurm);
         return "turmaadicionada";
     }

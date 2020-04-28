@@ -1,0 +1,12 @@
+com\conquer\desafio\controller\LoginController.class
+com\conquer\desafio\service\TurmService.class
+com\conquer\desafio\service\LoginService.class
+com\conquer\desafio\mysql\UserRepository.class
+com\conquer\desafio\model\Turm.class
+com\conquer\desafio\DesafioApplication.class
+com\conquer\desafio\model\User.class
+com\conquer\desafio\controller\TurmController.class
+com\conquer\desafio\controller\MainPageController.class
+com\conquer\desafio\controller\AlunoController.class
+com\conquer\desafio\service\AlunoService.class
+com\conquer\desafio\mysql\UserTable.class

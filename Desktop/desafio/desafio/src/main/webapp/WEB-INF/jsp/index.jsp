@@ -29,10 +29,10 @@
 			<div id="formContent">
 				<form id="model" method="POST" action="/principal">
 					<input type="text" id="userName" class="fadeIn second"
-						name="userName" placeholder="user"> <input type="password"
+						name="userName" placeholder="USER"> <input type="password"
 						id="password" class="fadeIn third" name="password"
-						placeholder="password"> 
-					<input type="submit" class="fadeIn fourth" value="Log In">
+						placeholder="PASSWORD"> 
+					<input type="submit" class="fadeIn fourth" value="LOGIN">
 				</form>
 			</div>
 		</div>

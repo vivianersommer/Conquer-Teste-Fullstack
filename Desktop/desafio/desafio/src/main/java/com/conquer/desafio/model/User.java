@@ -2,21 +2,17 @@ package com.conquer.desafio.model;
 
 public class User {
 	
-	private final int id;
 	private final String firstName;
 	private final String lastName;
 	private final int numberTurm;
 	
-	public User(int id,String firstName,String lastName, int numberTurm) {
-		this.id = id;
+	public User(String firstName,String lastName, int numberTurm) {
+
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.numberTurm = numberTurm;
 	}
 	
-	public int getId() {
-		return id;
-	}
 
 	public String getFirstName() {
 		return firstName;
@@ -29,8 +25,5 @@ public class User {
 	public int getNumberTurm() {
 		return numberTurm;
 	}
-
-	
-	
 
 }

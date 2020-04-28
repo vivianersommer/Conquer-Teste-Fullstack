@@ -31,10 +31,9 @@
 						</a>
 						<div class="nav-collapse collapse">
 							<ul class="nav">
-								<li class="active"><a href="/principalLogged">Página
-										Principal</a></li>
-								<li><a href="/turma">Adicionar Turma</a></li>
-								<li><a href="/aluno">Adicionar Aluno </a></li>
+								<li class="active"><a href="/principalLogged">PÁGINA PRINCIPAL</a></li>
+								<li><a href="/turma">ADICIONAR TURMA</a></li>
+								<li><a href="/aluno">ADICIONAR ALUNO</a></li>
 							</ul>
 						</div>
 					</div>
@@ -42,13 +41,13 @@
 			</div>
 		</div>
 		
-		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Adicionar Turma - Escola Conquer</p>
+		<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ADICIONAR TURMA - ESCOLA CONQUER</p>
 		
 		<form id="model" method="POST" action="/turmaPost">
-					<input type="text" id="name" class="fadeIn first" name="name" placeholder="Nome da Turma" required> 
-					<input type="text" id="teacher" class="fadeIn second" name="teacher" placeholder="Nome do Professor" required>
-					<input type="number" id="numberTurm" class="fadeIn third" name="numberTurm" placeholder="Número da Turma" required>
-					<input type="submit" class="fadeIn fourth" value="Adicionar Turma">
+					<input type="text" id="name" class="fadeIn first" name="name" placeholder="NOME DA TURMA" required> 
+					<input type="text" id="teacher" class="fadeIn second" name="teacher" placeholder="NOME DO PROFESSOR" required>
+					<input type="number" id="numberTurm" class="fadeIn third" name="numberTurm" placeholder="NÚMERO DA TURMA" required>
+					<input type="submit" class="fadeIn fourth" value="ADICIONAR TURMA">
 		</form>
 
 		

@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+
 @Controller
 @SessionAttributes("name")
 public class MainPageController {
@@ -14,7 +15,7 @@ public class MainPageController {
     public String showMainPageLogged(ModelMap model){
         return "principal";
     }
-    
+ 
     @RequestMapping(value="/aluno", method = RequestMethod.GET)
     public String showStudent(ModelMap model){
         return "aluno";
@@ -23,8 +24,6 @@ public class MainPageController {
     @RequestMapping(value="/turma", method = RequestMethod.GET)
     public String showTeam(ModelMap model){
         return "turma";
-    }
-
-
+    }   
 
 }
