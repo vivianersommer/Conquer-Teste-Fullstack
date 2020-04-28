@@ -6,22 +6,24 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.conquer.desafio.mysql.TurmRepository;
 import com.conquer.desafio.mysql.TurmTable;
-
+import com.conquer.desafio.mysql.UserRepository;
+import com.conquer.desafio.mysql.UserTable;
 
 @Service
-public class TurmService {
-
+public class MainPageService {
+	
 	@Autowired
 	private TurmRepository turm;
 	
-	
-	public @ResponseBody String insertTurm(String name,String teacher, int numberTurm) {
-		TurmTable n = new TurmTable();
-	    n.setName(name);
-	    n.setTeacher(teacher);
-	    n.setNumberTurm(numberTurm);
-	    turm.save(n);
-	    return "Saved";
+	@Autowired
+	private UserRepository students;
+
+	public @ResponseBody Iterable<TurmTable> getAllTurms() {
+		return turm.findAll();
     }
 	
+	public @ResponseBody Iterable<UserTable> getAllStudents() {
+		return students.findAll();
+    }
+
 }

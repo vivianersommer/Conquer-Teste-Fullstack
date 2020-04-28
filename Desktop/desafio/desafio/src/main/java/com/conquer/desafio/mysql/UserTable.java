@@ -10,11 +10,18 @@ public class UserTable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-
 	private Integer id;
 	private String firstName;
 	private String lastName;
 	private int numberTurm;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	public String getFirstName() {
 		return firstName;
