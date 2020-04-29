@@ -1,3 +1,4 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -41,47 +42,48 @@
 				</div>
 			</div>
 		</div>
-		<h1>
-			<br> <br> <br> <br> <br> <br> <br>
-			<br> <br> <br> <br> <br>
-		</h1>
+
 		<div id="tabelas">
-			<table id="tabelaAlunos">
-				<caption>Tabela de Alunos</caption>
-				<tr>
-					<td>Aluno</td>
-					<td>Número da Turma</td>
-				</tr>
-				<tr>
-					<td>Ana</td>
-					<td>151</td>
-				</tr>
-			</table>
 			<table id="tabelaTurmas">
-				<caption>Tabela de Turmas</caption>
 				<tr>
-					<td>Turma</td>
-					<td>Número de alunos</td>
+					<th>Nome</th>
+					<th>Professor</th>
+					<th>Número da Turma</th>
 				</tr>
+				<c:forEach items="${Turms}" var="listTurms">
+					<tr>
+						<th>${listTurms.name}</th>
+						<th>${listTurms.teacher}</th>
+						<th>${listTurms.numberTurm}</th>
+					</tr>
+				</c:forEach>
+			</table>
+
+			<table id="tabelaAlunos">
 				<tr>
-					<td>151</td>
-					<td>1</td>
+					<th>Nome</th>
+					<th>Sobrenome</th>
+					<th>Número da Turma</th>
 				</tr>
+				<c:forEach items="${Students}" var="listStudents">
+					<tr>
+						<th>${listStudents.firstName}</th>
+						<th>${listStudents.lastName}</th>
+						<th>${listStudents.numberTurm}</th>
+					</tr>
+				</c:forEach>
 			</table>
 		</div>
-		<div class="col-10">
+		
+		<footer class="footer-for-businesses" id="container_amarelo">
+			<a href="https://www.linkedin.com/school/escolaconquer/" class="mx-3"><img
+				src="https://escolaconquer.com.br/wp-content/uploads/2019/10/linkedin.png"></a>
+			<a href="https://www.facebook.com/escolaconquer/" class="mx-3"><img
+				src="https://escolaconquer.com.br/wp-content/uploads/2019/10/facebook.png"></a>
+			<a href="https://www.instagram.com/escolaconquer/" class="mx-3"><img
+				src="https://escolaconquer.com.br/wp-content/uploads/2019/10/instagram.png"></a>
+		</footer>
 
-			<footer class="footer-for-businesses" id="container_amarelo">
-				<a href="https://www.linkedin.com/school/escolaconquer/"
-					class="mx-3"><img
-					src="https://escolaconquer.com.br/wp-content/uploads/2019/10/linkedin.png"></a>
-				<a href="https://www.facebook.com/escolaconquer/" class="mx-3"><img
-					src="https://escolaconquer.com.br/wp-content/uploads/2019/10/facebook.png"></a>
-				<a href="https://www.instagram.com/escolaconquer/" class="mx-3"><img
-					src="https://escolaconquer.com.br/wp-content/uploads/2019/10/instagram.png"></a>
-			</footer>
-
-		</div>
 	</div>
 </body>
 </html>

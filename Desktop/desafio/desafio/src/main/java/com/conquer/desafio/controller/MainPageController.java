@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-//import com.conquer.desafio.mysql.TurmTable;
-//import com.conquer.desafio.mysql.UserTable;
+import com.conquer.desafio.mysql.TurmTable;
+import com.conquer.desafio.mysql.UserTable;
 import com.conquer.desafio.service.MainPageService;
 
 
@@ -21,9 +21,11 @@ public class MainPageController {
 	
     @RequestMapping(value="/principalLogged", method = RequestMethod.GET)
     public String showMainPageLogged(ModelMap model){
-    	//Iterable<UserTable> Students = service.getAllStudents(); 
-    	//Iterable<TurmTable>	Turms = service.getAllTurms();	
-        return "principal";
+    	Iterable<UserTable> Students = service.getAllStudents(); 
+    	Iterable<TurmTable> Turms = service.getAllTurms();	
+    	model.addAttribute("Students", Students);
+    	model.addAttribute("Turms" , Turms);
+    	return "principal";   
     }
  
     @RequestMapping(value="/aluno", method = RequestMethod.GET)
