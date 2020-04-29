@@ -6,5 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 //CRUD refers Create, Read, Update, Delete
 
 public interface TurmRepository extends CrudRepository<TurmTable, Integer> {
+	
+	TurmTable name(String name);
 
 }

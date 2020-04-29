@@ -11,7 +11,6 @@
 	src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <link rel="stylesheet" href="style/principal.css">
-</head>
 <body>
 	<div id="interface">
 
@@ -44,37 +43,56 @@
 		</div>
 
 		<div id="tabelas">
-			<table id="tabelaTurmas">
-				<tr>
-					<th>Nome</th>
-					<th>Professor</th>
-					<th>Número da Turma</th>
-				</tr>
-				<c:forEach items="${Turms}" var="listTurms">
+			<h2>Lista de Turmas</h2>
+			<table class="table">
+				<thead>
 					<tr>
-						<th>${listTurms.name}</th>
-						<th>${listTurms.teacher}</th>
-						<th>${listTurms.numberTurm}</th>
+						<th>Nome</th>
+						<th>Professor</th>
+						<th>Número de Alunos</th>
 					</tr>
-				</c:forEach>
+				</thead>
+				<tbody>
+					<tr>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+					<c:forEach items="${Turms}" var="listTurms">
+						<tr>
+							<td>${listTurms.name}</td>
+							<td>${listTurms.teacher}</td>
+							<td>${listTurms.numberStudents}</td>
+						</tr>
+					</c:forEach>
+				</tbody>
 			</table>
-
-			<table id="tabelaAlunos">
-				<tr>
-					<th>Nome</th>
-					<th>Sobrenome</th>
-					<th>Número da Turma</th>
-				</tr>
-				<c:forEach items="${Students}" var="listStudents">
+			<h2>Lista de Alunos</h2>
+			<table class="table">
+				<thead>
 					<tr>
-						<th>${listStudents.firstName}</th>
-						<th>${listStudents.lastName}</th>
-						<th>${listStudents.numberTurm}</th>
+						<th>Nome</th>
+						<th>Sobrenome</th>
+						<th>Nome da Turma</th>
 					</tr>
-				</c:forEach>
+				</thead>
+				<tbody>
+					<tr>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
+					<c:forEach items="${Students}" var="listStudents">
+						<tr>
+							<td>${listStudents.firstName}</td>
+							<td>${listStudents.lastName}</td>
+							<td>${listStudents.nameTurm}</td>
+						</tr>
+					</c:forEach>
+				</tbody>
 			</table>
 		</div>
-		
+
 		<footer class="footer-for-businesses" id="container_amarelo">
 			<a href="https://www.linkedin.com/school/escolaconquer/" class="mx-3"><img
 				src="https://escolaconquer.com.br/wp-content/uploads/2019/10/linkedin.png"></a>

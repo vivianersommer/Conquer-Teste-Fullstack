@@ -47,7 +47,7 @@
 		<form id="model" method="POST" action="/alunoPost">
 					<input type="text" id="firstName" class="fadeIn first" name="firstName" placeholder="NOME DO ALUNO" required> 
 					<input type="text" id="lastName" class="fadeIn second" name="lastName" placeholder="SOBRENOME DO ALUMO" required>
-					<input type="number" id="numberTurm" class="fadeIn third" name="numberTurm" placeholder="NÚMERO DA TURMA" required>
+					<input type="text" id="nameTurm" class="fadeIn third" name="nameTurm" placeholder="NOME DA TURMA" required>
 					<input type="submit" class="fadeIn fourth" value="ADICIONAR ALUNO">
 		</form>
 

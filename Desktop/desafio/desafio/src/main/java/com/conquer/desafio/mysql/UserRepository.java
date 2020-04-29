@@ -7,5 +7,5 @@ import com.conquer.desafio.mysql.UserTable;
 // CRUD refers Create, Read, Update, Delete
 
 public interface UserRepository extends CrudRepository<UserTable, Integer> {
-
+	
 }

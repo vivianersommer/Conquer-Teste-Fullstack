@@ -1,8 +1,7 @@
 @font-face {
-  font-family: 'FonteLogo';
-  src: url("news-gothic-bold-condensed-bt.ttf");
+	font-family: 'FonteLogo';
+	src: url("news-gothic-bold-condensed-bt.ttf");
 }
-
 
 /*Formatação Geral*/
 body {
@@ -32,7 +31,7 @@ footer a {
 	text-align: center;
 }
 
-footer a img{
+footer a img {
 	margin: 5px;
 	padding: 0px;
 	display: inline-block;
@@ -40,10 +39,10 @@ footer a img{
 	text-align: center;
 }
 
-#container_amarelo a{
+#container_amarelo a {
 	text-align: center;
 	align-items: center;
-		padding: 10px;
+	padding: 10px;
 	margin: 10px;
 }
 
@@ -97,44 +96,38 @@ header#cabecalho img {
 /**/
 
 /* Formatação das Tabelas*/
-#tabelaAlunos {
+h2 {
+	font-family: FonteLogo, Helvetica, sans-serif;
+	font-size: 30px;
+	text-align: center;
 	color: #ffffff;
-	background-color: #000000;
+	align-items: center;
+}
+
+tr {
 	font-family: FonteLogo, Helvetica, sans-serif;
 	font-size: 20px;
 	text-align: center;
-	border-collapse: collapse;
-	display: inline;
-	margin: 50px;
+	color: #ffffff;
+	align-items: center;
 }
 
-#tabelaTurmas {
-	color: #ffffff;
-	background-color: #000000;
+td {
 	font-family: FonteLogo, Helvetica, sans-serif;
 	font-size: 20px;
 	text-align: center;
-	border-collapse: collapse;
-	display: inline;
-	margin: 50px;
-}
-
-#tabelas table tr {
-	border: 1px solid #ffffff;
-	padding: 8px;
-}
-
-#tabelas table td {
-	border: 1px solid #ffffff;
-	padding: 8px;
-}
-
-#tabelas table caption {
-	border: 1px solid #ffffff;
-	padding: 8px;
+	color: #ffffff;
+	border: 1px solid #fff628;
+	align-items: center;
 }
 
 #tabelas {
-	padding: 20px;
+	font-family: FonteLogo, Helvetica, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin: 100px;
+	color: #ffffff;
+	align-items: center;
 }
+
 /**/

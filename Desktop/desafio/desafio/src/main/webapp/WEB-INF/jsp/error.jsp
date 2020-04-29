@@ -10,7 +10,7 @@
 <script
 	src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="style/alunoadicionado.css">
+<link rel="stylesheet" href="style/padraodeerro.css">
 </head>
 <body>
 	<div id="interface">

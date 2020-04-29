@@ -18,10 +18,12 @@ public class MainPageService {
 	@Autowired
 	private UserRepository students;
 
+	//Busca no banco de todas as turmas
 	public @ResponseBody Iterable<TurmTable> getAllTurms() {
 		return turm.findAll();
     }
 	
+	//Busca no banco de todos os alunos
 	public @ResponseBody Iterable<UserTable> getAllStudents() {
 		return students.findAll();
     }

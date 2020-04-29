@@ -1,11 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.conquer.desafio.DesafioApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 11.8 s <<< FAILURE! - in com.conquer.desafio.DesafioApplicationTests
-contextLoads  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'turmController': Unsatisfied dependency expressed through field 'turm'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'turmService': Unsatisfied dependency expressed through field 'turm'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'turmRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.conquer.desafio.mysql.TurmTable
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'turmService': Unsatisfied dependency expressed through field 'turm'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'turmRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.conquer.desafio.mysql.TurmTable
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'turmRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class com.conquer.desafio.mysql.TurmTable
-Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.conquer.desafio.mysql.TurmTable
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.823 s - in com.conquer.desafio.DesafioApplicationTests

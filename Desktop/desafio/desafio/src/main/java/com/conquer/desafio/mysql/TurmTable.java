@@ -13,7 +13,7 @@ public class TurmTable {
 	private Integer id;
 	private String name;
 	private String teacher;
-	private int numberTurm;
+	private int numberStudents = 0;
 
 	public Integer getId() {
 		return id;
@@ -21,14 +21,6 @@ public class TurmTable {
 
 	public void setId(Integer id) {
 		this.id = id;
-	}
-
-	public int getNumberTurm() {
-		return numberTurm;
-	}
-
-	public void setNumberTurm(int numberTurm) {
-		this.numberTurm = numberTurm;
 	}
 
 	public String getName() {
@@ -45,6 +37,14 @@ public class TurmTable {
 
 	public void setTeacher(String teacher) {
 		this.teacher = teacher;
+	}
+
+	public int getNumberStudents() {
+		return numberStudents;
+	}
+
+	public void setNumberStudents() {
+		this.numberStudents = this.numberStudents + 1;
 	}
 
 }

@@ -13,7 +13,7 @@ public class UserTable {
 	private Integer id;
 	private String firstName;
 	private String lastName;
-	private int numberTurm;
+	private String nameTurm;
 
 	public Integer getId() {
 		return id;
@@ -39,12 +39,12 @@ public class UserTable {
 		this.lastName = lastName;
 	}
 
-	public int getNumberTurm() {
-		return numberTurm;
+	public String getNameTurm() {
+		return nameTurm;
 	}
 
-	public void setNumberTurm(int numberTurm) {
-		this.numberTurm = numberTurm;
+	public void setNameTurm(String nameTurm) {
+		this.nameTurm = nameTurm;
 	}
 
 }

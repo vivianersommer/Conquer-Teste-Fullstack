@@ -14,12 +14,11 @@ public class TurmService {
 	@Autowired
 	private TurmRepository turm;
 	
-	
-	public @ResponseBody String insertTurm(String name,String teacher, int numberTurm) {
+	//Adiciona turma no Banco
+	public @ResponseBody String insertTurm(String name,String teacher) {
 		TurmTable n = new TurmTable();
 	    n.setName(name);
 	    n.setTeacher(teacher);
-	    n.setNumberTurm(numberTurm);
 	    turm.save(n);
 	    return "Saved";
     }

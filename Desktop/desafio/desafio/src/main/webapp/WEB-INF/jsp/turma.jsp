@@ -46,8 +46,7 @@
 		<form id="model" method="POST" action="/turmaPost">
 					<input type="text" id="name" class="fadeIn first" name="name" placeholder="NOME DA TURMA" required> 
 					<input type="text" id="teacher" class="fadeIn second" name="teacher" placeholder="NOME DO PROFESSOR" required>
-					<input type="number" id="numberTurm" class="fadeIn third" name="numberTurm" placeholder="NÚMERO DA TURMA" required>
-					<input type="submit" class="fadeIn fourth" value="ADICIONAR TURMA">
+					<input type="submit" class="fadeIn third" value="ADICIONAR TURMA">
 		</form>
 
 		

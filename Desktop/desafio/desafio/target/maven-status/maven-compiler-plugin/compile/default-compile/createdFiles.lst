@@ -5,8 +5,7 @@ com\conquer\desafio\service\LoginService.class
 com\conquer\desafio\mysql\UserRepository.class
 com\conquer\desafio\mysql\TurmRepository.class
 com\conquer\desafio\DesafioApplication.class
+com\conquer\desafio\service\MainPageService.class
 com\conquer\desafio\controller\TurmController.class
 com\conquer\desafio\controller\MainPageController.class
-com\conquer\desafio\controller\AlunoController.class
-com\conquer\desafio\service\AlunoService.class
 com\conquer\desafio\mysql\UserTable.class
